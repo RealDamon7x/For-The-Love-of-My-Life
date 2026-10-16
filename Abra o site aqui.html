@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Um presente para Clara ♡</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="caixa">
+
+        <!-- TELA 1: LOGIN -->
+        <section id="tela-login" class="tela">
+            <h1>Oi, você! ♡</h1>
+
+            <p>Antes de entrar, preciso saber quem é você...</p>
+
+            <form id="form-login">
+                <input
+                    type="text"
+                    id="nome"
+                    placeholder="Digite seu nome..."
+                    autocomplete="off"
+                    required
+                >
+
+                <button type="submit">Entrar ♡</button>
+            </form>
+
+            <p id="mensagem" class="mensagem"></p>
+        </section>
+
+
+        <!-- TELA 2: BOAS-VINDAS -->
+        <section id="tela-boas-vindas" class="tela" hidden>
+            <h1>The seal of Love ♡</h1>
+
+            <p>
+                Essa é apenas uma pequena demonstração de amor para você...
+            </p>
+
+            <button type="button" id="botao-continuar">
+                Continuar ♡
+            </button>
+        </section>
+
+
+        <!-- TELA 3: SENHA -->
+        <section id="tela-senha" class="tela" hidden>
+            <h1>Preciso que digite a senha para liberar o que preparei para ti. ♡</h1>
+
+            <p>
+                Dica: Primeira vez em que duas visões que, futuramente, nunca mais parariam de se olhar, se cruzaram.
+            </p>
+
+            <form id="form-senha">
+                <input
+                    type="password"
+                    id="senha"
+                    placeholder="Digite a senha..."
+                    inputmode="numeric"
+                    maxlength="4"
+                    pattern="[0-9]{4}"
+                    required
+                >
+
+                <button type="submit">Desbloquear ♡</button>
+            </form>
+
+            <p id="mensagem-erro" class="mensagem"></p>
+        </section>
+
+
+        <!-- TELA 4: DESBLOQUEIO -->
+        <section id="tela-desbloqueio" class="tela" hidden>
+            <h1>Parabéns, amor. Não esperava menos da minha menina! ♡</h1>
+
+            <p>
+                Espero que isso te alegre e te faça ver o quanto te amo!
+            </p>
+
+            <button type="button" id="botao-presente">
+                Continuar ♡
+            </button>
+        </section>
+
+
+        <!-- TELA 5: PRESENTE FINAL -->
+        <section id="tela-presente" class="tela" hidden>
+            <h1>Um Presentinho ♡</h1>
+
+            <p>
+                Finalmente, você liberou o presente principal. Aproveite cada letra que meu amor expressara por você.
+            </p>
+
+            <a href="presente.pdf" download class="botao">
+                Abrir meu presente ♡
+            </a>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
